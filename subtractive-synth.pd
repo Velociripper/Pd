@@ -1,0 +1,55 @@
+#N canvas 0 25 1440 900 12;
+#X text 667 43 subtractive synth;
+#X obj 380 209 noise~;
+#X obj 383 320 lop~;
+#X floatatom 465 324 5 0 0 0 - - - 0;
+#X obj 384 372 *~ 0.25;
+#X obj 537 287 vsl 15 128 0 3000 0 0 empty empty empty 0 -9 0 10 #feffc6
+#000000 #000000 0 1;
+#X obj 312 357 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #ffc7c6
+#000000 #000000 0 1;
+#X obj 387 483 dac~;
+#X obj 725 203 noise~;
+#X floatatom 810 318 5 0 0 0 - - - 0;
+#X obj 729 366 *~ 0.25;
+#X obj 881 269 vsl 15 128 0 3000 0 0 empty empty empty 0 -9 0 10 #feffc6
+#000000 #000000 0 1;
+#X obj 657 351 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #ffc7c6
+#000000 #000000 0 1;
+#X obj 732 477 dac~;
+#X obj 728 314 hip~;
+#X obj 1068 214 noise~;
+#X floatatom 1135 278 5 0 0 0 - - - 0;
+#X obj 1072 377 *~ 0.25;
+#X obj 1183 111 vsl 15 128 0 3000 0 0 empty empty empty 0 -9 0 10 #feffc6
+#000000 #000000 0 1;
+#X obj 1000 342 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #ffc7c6
+#000000 #000000 0 1;
+#X obj 1071 325 bp~ 220 1;
+#X floatatom 1228 276 5 0 0 0 - - - 0;
+#X obj 1287 108 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #ffe3c6
+#000000 #000000 0 1;
+#X obj 1072 528 output~;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 1;
+#X connect 4 0 7 0;
+#X connect 4 0 7 1;
+#X connect 5 0 3 0;
+#X connect 6 0 4 1;
+#X connect 8 0 14 0;
+#X connect 9 0 14 1;
+#X connect 10 0 13 0;
+#X connect 10 0 13 1;
+#X connect 11 0 9 0;
+#X connect 12 0 10 1;
+#X connect 14 0 10 0;
+#X connect 15 0 20 0;
+#X connect 16 0 20 1;
+#X connect 17 0 23 0;
+#X connect 17 0 23 1;
+#X connect 18 0 16 0;
+#X connect 19 0 17 1;
+#X connect 20 0 17 0;
+#X connect 21 0 20 2;
+#X connect 22 0 21 0;

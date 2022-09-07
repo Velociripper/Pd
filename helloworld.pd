@@ -1,0 +1,4 @@
+#N canvas 0 0 1440 900 12;
+#X obj 615 -2;
+#X obj 297 -7;
+#X text 675 109 hello world!;

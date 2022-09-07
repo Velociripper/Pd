@@ -1,0 +1,16 @@
+#N canvas 0 45 1440 900 12;
+#X obj 472 279 *~;
+#X obj 671 175 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X msg 672 240 1 50 \, 0 50 100;
+#X obj 657 315 vline~;
+#X obj 505 365 output~;
+#X text 713 278 attack up for (50) \, release in (50) \, sustain 100
+;
+#X obj 463 179 noise~;
+#X connect 0 0 4 0;
+#X connect 0 0 4 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 1;
+#X connect 6 0 0 0;

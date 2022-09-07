@@ -1,0 +1,65 @@
+#N canvas 0 25 1440 900 12;
+#X obj 653 139 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X floatatom 718 143 5 0 0 0 - - - 0;
+#X obj 652 280 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X msg 717 112 100;
+#X obj 718 78 loadbang;
+#X obj 651 319 int 1;
+#X obj 714 317 + 1;
+#X floatatom 650 365 5 0 0 0 - - - 0;
+#X obj 650 407 % 4;
+#X obj 649 451 + 1;
+#X floatatom 649 494 5 0 0 0 - - - 0;
+#X text 774 321 sequence adds 1;
+#X text 731 370 module mathematical function;
+#X text 730 409 divide count by 4 and spit out remainder;
+#X text 733 448 add 1 to remainder;
+#X obj 649 585 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 705 585 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 765 585 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 821 585 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X msg 650 635 60;
+#X obj 719 755 mtof;
+#X text 634 635 C;
+#X msg 706 634 62;
+#X msg 763 633 64;
+#X msg 821 631 65;
+#X floatatom 720 801 5 0 0 0 - - - 0;
+#X msg 719 177 tempo \$1 permin;
+#X obj 652 218 metro;
+#X obj 739 694 select 0;
+#X obj 687 533 select 1 2 3 4;
+#X text 716 29 bpm select;
+#X connect 0 0 27 0;
+#X connect 1 0 26 0;
+#X connect 2 0 5 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 1;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 29 0;
+#X connect 15 0 19 0;
+#X connect 16 0 22 0;
+#X connect 17 0 23 0;
+#X connect 18 0 24 0;
+#X connect 19 0 28 0;
+#X connect 20 0 25 0;
+#X connect 22 0 28 0;
+#X connect 23 0 28 0;
+#X connect 24 0 28 0;
+#X connect 26 0 27 0;
+#X connect 27 0 2 0;
+#X connect 29 0 15 0;
+#X connect 29 1 16 0;
+#X connect 29 2 17 0;
+#X connect 29 3 18 0;
